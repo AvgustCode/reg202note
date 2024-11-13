@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Использование шрифта Poppins */
+    margin: 0;
+    padding: 20px;
+    background-color: #121212; /* Темный фон */
+    color: #fff;
+}
+
+.container {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00ffcc; /* Неоновый цвет */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid #00ffcc; /* Неоновая рамка */
+    border-radius: 5px;
+    background: transparent; /* Прозрачный фон */
+    color: #fff;
+}
+
+input::placeholder {
+    color: #aaa; /* Цвет плейсхолдера */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #00ffcc; /* Неоновый цвет */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #00e6b3; /* Темнее неоновый при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background: rgba(0, 255, 204, 0.1); /* Полупрозрачный фон для заметок */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: rgba(0, 255, 204, 0.2); /* Изменение фона при наведении */
+}
+
+li button {
+    background: transparent; /* Прозрачный фон для кнопки удаления */
+    color: #ff4d4d; /* Красный цвет для удаления */
+    border: none;
+    cursor: pointer;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}
+
